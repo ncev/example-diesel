@@ -7,3 +7,10 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+uuid = "0.8.1"
+chrono = { version = "0.4", features = ["serde"] }
+
+[dependencies.diesel]
+version = "1.4.5"
+default-features = false
+features = ["postgres", "chrono", "uuidv07"]
