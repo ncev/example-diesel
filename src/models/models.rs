@@ -1,9 +1,9 @@
 use uuid::Uuid;
-
+use serde::{Serialize, Deserialize};
 use crate::models::schema::*;
 
 /// JzAdress representation
-#[derive(Queryable, Insertable)]
+#[derive(Queryable, Insertable, Serialize, Deserialize)]
 #[table_name="jz_adress"]
 pub struct JzAdress {
     pub ad_uuid: Uuid,
