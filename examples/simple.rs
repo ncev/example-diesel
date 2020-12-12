@@ -29,7 +29,7 @@ fn print_all_adress(connection: &PgConnection) {
 
 fn main() -> ConnectionResult<()> {
 
-    // PG connectino string
+    // PG connection string
     let pg_connection_string =
         "postgres://";
 
